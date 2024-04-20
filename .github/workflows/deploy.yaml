@@ -39,7 +39,7 @@ jobs:
 
       - name: Update Kubernetes config
         run: |
-          aws eks --region us-west-2 update-kubeconfig --name terraform-eks-${{secrets.ENV}}
+          aws eks --region us-west-2 update-kubeconfig --name eks-${{secrets.ENV}}
 
       - name: Deploy to EKS
         run: |
